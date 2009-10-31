@@ -1,0 +1,3 @@
+useDynLib(MaXact,c_maxact,c_maxact_test,c_catt,c_catt_test)
+export(maxact.test, catt.test)
+
