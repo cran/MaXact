@@ -30,7 +30,7 @@ private:
 template<class T> inline
 bool empty(const range_base<T>& x)
 {
-  return x.upper()<=x.lower();
+  return x.upper() < x.lower();
 }
 
 template<class T> inline

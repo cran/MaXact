@@ -1,7 +1,6 @@
 #include "util.h"
 #include "maxact.h"
 extern "C" {
-  maxacter maxact;
   void c_maxact_test(int *table, int *useMax3, int *alternative,double *stat, double *p){
     ct2x3 ct;
     ct(0,0)=table[0];
@@ -11,8 +10,9 @@ extern "C" {
     ct(1,1)=table[4];
     ct(1,2)=table[5];
     ct.sum_cal();
-    *stat = catt_max(ct, *useMax3, static_cast<Alternative>(*alternative));
-    *p = maxact.p(ct, *useMax3, static_cast<Alternative>(*alternative));
+    MaXact maxact(ct, *useMax3, static_cast<Alternative>(*alternative));
+    *stat = maxact.stat();
+    *p = maxact.p();
   }
   
   void c_maxact(int *table, int *useMax3, int *alternative,double *stat){

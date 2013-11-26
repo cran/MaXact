@@ -1,0 +1,11 @@
+6320a15c41dce59e73651346309f9001 *DESCRIPTION
+80d3971ad80789ad625bc50992309c25 *NAMESPACE
+88ecdc1520afea868fe7d898d07dfd0a *R/fnorm2.R
+7586b360dbf51dd134545b3f04c55060 *R/fnorm3.R
+824616aa8c0657e78a67b86fdd7890f3 *R/maxact.test.R
+6d5c8c51dee3f4282dcf2177e0038e10 *man/maxact.Rd
+2cad43789b48c7fe81247d64bf5d806a *src/c.cpp
+8bad5433d38041acc6d709a8eb0c1ff3 *src/maxact.cpp
+5409f26ea636a159d975ac4669548176 *src/maxact.h
+2d450ee1651eb8c0bdd0b0995cd94baa *src/range.h
+97326ff2c0283c85d0bfa4f30d2ec79f *src/util.h

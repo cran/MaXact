@@ -7,6 +7,11 @@ class tct2x3
 {
 public:
   //  tct2x3():_sum_cal(false){};
+  tct2x3<T>& operator = (const tct2x3<T> &rh){
+    std::copy(rh.data, rh.data + 6, data);
+    sum_cal();
+    return *this;
+  }
   inline T& operator()(unsigned row, unsigned col){
     return data[row][col];
   }
@@ -44,7 +49,7 @@ private:
   //  bool _sum_cal;
 };
 
-typedef tct2x3<unsigned> ct2x3; 
+typedef tct2x3<int> ct2x3; 
 
 template<class T>
 std::ostream & operator<<(std::ostream &os, tct2x3<T> tc){

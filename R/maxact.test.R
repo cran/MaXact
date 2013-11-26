@@ -12,9 +12,9 @@ alterToInt <-
   function(data, max3 = TRUE, exact=TRUE, alternative = "two.sided"){
     alterInt = alterToInt(alternative)
     data.name = paste(deparse(substitute(data)), "(2x3 contingency table)")
-    if(!is.matrix(data))
+    if(!is.matrix(data)){
       stop("'data' must be a matrix")
-    if(is.matrix(data)){
+    } else{
       if (dim(data)[1] != 2 || dim(data)[2] != 3) 
         stop("'data' must have 2 rows and 3 columns")
       if (!is.numeric(data) || any(data < 0) || any(is.na(data))) 
