@@ -1,5 +1,5 @@
 #ifndef MAXACT_HPP
-#define MAXACT_hpp
+#define MAXACT_HPP
 
 #include "util.h"
 #include <algorithm>

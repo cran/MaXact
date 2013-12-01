@@ -8,7 +8,8 @@ class tct2x3
 public:
   //  tct2x3():_sum_cal(false){};
   tct2x3<T>& operator = (const tct2x3<T> &rh){
-    std::copy(rh.data, rh.data + 6, data);
+    std::copy(&rh.data[0][0], &rh.data[0][0] + 6,
+              &data[0][0]);
     sum_cal();
     return *this;
   }

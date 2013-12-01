@@ -1,8 +1,8 @@
 Package: MaXact
 Type: Package
 Title: Exact max-type Cochran-Armitage trend test(CATT)
-Version: 0.2
-Date: 2013-11-26
+Version: 0.2.1
+Date: 2013-12-01
 Author: Jianan Tian <jiant17@gmail.com>, Chenliang Xu
         <lucky.random@gmail.com>
 Maintainer: Chenliang Xu <lucky.random@gmail.com>
@@ -13,6 +13,6 @@ Description: Perform exact MAX3 or MAX2 test for one-locus genetic
         with the normal approximation method.
 License: GPL-2
 Repository: CRAN
-Packaged: 2013-11-27 21:52:54 UTC; luckyrand
+Packaged: 2013-12-02 01:27:54 UTC; luckyrand
 NeedsCompilation: yes
-Date/Publication: 2013-11-28 08:13:02
+Date/Publication: 2013-12-05 00:42:52
